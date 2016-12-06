@@ -38,7 +38,7 @@ void InitFoodDBFileDescriptor(void);
 void testPrint(void);
 void InitFoodDateBase(void);
 void SavedFoodDataToStruct(char * str, int n);
-
+void getFoodDB(void);
 
 
 

@@ -5,6 +5,12 @@
 
 Food * food;
 
+void getFoodDB(void)
+{
+	InitFoodDBFileDescriptor(); 
+	InitFoodDateBase(); 
+	testPrint(); 
+}
 
 void releaseFoodDBMemory(void)
 {
