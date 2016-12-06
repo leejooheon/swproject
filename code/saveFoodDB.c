@@ -5,7 +5,8 @@
 
 Food * food;
 
-void releaseMemory(void)
+
+void releaseFoodDBMemory(void)
 {
 	int i;
 	for (i = 0; i < 3153; i++) {
@@ -14,7 +15,7 @@ void releaseMemory(void)
 	free(food);
 }
 
-void InitFileDescriptor(void)
+void InitFoodDBFileDescriptor(void)
 {
 	if ((fp = fopen("../DB/Food_DB.txt", "r")) == NULL)
 	{
@@ -30,7 +31,7 @@ void testPrint(void)
 	}
 }
 
-void InitDateBase(void)
+void InitFoodDateBase(void)
 {
 	char buf[1024];
 	char *str;
@@ -39,13 +40,13 @@ void InitDateBase(void)
 	while (!feof(fp))
 	{
 		str = fgets(buf, sizeof(buf), fp);
-		SavedDataToStruct(str, n);
+		SavedFoodDataToStruct(str, n);
 		n++;
 	}
 	fclose(fp);
 }
 
-void SavedDataToStruct(char * str, int n)
+void SavedFoodDataToStruct(char * str, int n)
 {
 	int i = 0, k = 0, idx = 0, flag = 0, len;
 	char temp[128] = { 0, };

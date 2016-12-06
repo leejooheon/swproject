@@ -1,10 +1,10 @@
+int main(void) 
+{ 
+	InitFoodDBFileDescriptor(); 
+	InitFoodDateBase(); 
+	testPrint(); 
+	printf("name : %s\n", getName(2)); 
+	releaseFoodDBMemory(); 
+	return 0; 
+} 
 
-int main(void)
-{
-	InitFileDescriptor();
-	InitDateBase();
-	testPrint();
-	printf("name : %s\n", getName(2));
-	releaseMemory();
-	return 0;
-}
