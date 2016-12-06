@@ -32,6 +32,6 @@ typedef struct _Food {
 	float monounsaturate;
 	float polyunsatumted_fatty_acid;
 }Food;
-Food * food;
+extern Food * food;
 FILE * fp;
 #endif

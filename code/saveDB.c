@@ -3,6 +3,8 @@
 #include<string.h>
 #include<stdlib.h>
 
+Food * food;
+
 void releaseMemory(void)
 {
 	int i;

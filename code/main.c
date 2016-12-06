@@ -1,4 +1,4 @@
-#include "getFunction.c"
+
 int main(void)
 {
 	InitFileDescriptor();
