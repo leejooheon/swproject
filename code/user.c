@@ -115,7 +115,7 @@ int FindUserNumber(void)
 	fseek(fp2, 0, SEEK_SET);
 	memset(buf, 0, sizeof(char) * 32);
 
-	user_len = (int)malloc(sizeof(int));
+	user_len = (int*)malloc(sizeof(int));
 	*user_len = len;
 
 	return len;
