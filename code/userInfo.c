@@ -79,3 +79,22 @@ void InitConditionFileDescriptor(void)
 		exit(1);
 	}
 }
+void ClearUserInfo(UserInfo * usr)
+{
+	usr->age_weight = 0;
+	usr->calcium = 0;
+	usr->calorie = 0;
+	usr->folic_acid = 0;
+	usr->iron = 0;
+	usr->niacin = 0;
+	usr->phosphorus = 0;
+	usr->protein = 0;
+	usr->vit_A = 0;
+	usr->vit_B1 = 0;
+	usr->vit_B2 = 0;
+	usr->vit_B6 = 0;
+	usr->vit_C = 0;
+	usr->vit_E = 0;
+	usr->zinc = 0;
+}
+

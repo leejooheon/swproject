@@ -1,3 +1,8 @@
+#include "../header/UserInput.h"
+#include "../header/FoodDB.h"
+#include "../header/User.h"
+#include "../header/UserInfo.h"
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>

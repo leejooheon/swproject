@@ -26,6 +26,7 @@ extern void InitConditionFileDescriptor(void);
 extern void getConditionDB(void);
 extern void ShowConditionDB(void);
 extern void releaseUserInfoMemory(void);
+extern void ClearUserInfo(UserInfo * usr);
 
 extern UserInfo * userInfo;
 

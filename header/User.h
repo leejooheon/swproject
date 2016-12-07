@@ -3,6 +3,7 @@
 
 typedef struct _user {
 	char * name;
+	char sex[5];
 	int age_weight;
 }User;
 

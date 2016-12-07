@@ -36,7 +36,7 @@ void ShowAllMember(void)
 	int i, len = *user_len;
 	printf("User_length : %d\n", len);
 	for (i = 0; i < len; i++) {
-		printf("name : %s, age_or_weight : %d\n", user[i].name, user[i].age_weight);
+		printf("name : %s, sex : %s, age_or_weight : %d\n", user[i].name, user[i].sex, user[i].age_weight);
 	}
 	printf("\n");
 }
@@ -72,7 +72,8 @@ void SaveUser(void)
 				idx = 0;
 				switch (k) {
 				case 0: strncpy(user[n].name, temp, strlen(temp) + 1); k++; memset(temp, 0, sizeof(char) * 32); break;
-				case 1: user[n].age_weight = atoi(temp); memset(buf, 0, sizeof(char) * 32); break;
+				case 1: strncpy(user[n].sex, temp, strlen(temp) + 1); k++; memset(temp, 0, sizeof(char) * 32); break;
+				case 2: user[n].age_weight = atoi(temp); memset(buf, 0, sizeof(char) * 32); break;
 				default: break;
 				}
 			}
