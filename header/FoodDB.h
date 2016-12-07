@@ -33,12 +33,12 @@ typedef struct _Food {
 	float polyunsatumted_fatty_acid;
 }Food;
 
-void releaseFoodDBMemory(void);
-void InitFoodDBFileDescriptor(void);
-void testPrint(void);
-void InitFoodDateBase(void);
-void SavedFoodDataToStruct(char * str, int n);
-void getFoodDB(void);
+extern void releaseFoodDBMemory(void);
+extern void InitFoodDBFileDescriptor(void);
+extern void testPrint(void);
+extern void InitFoodDateBase(void);
+extern void SavedFoodDataToStruct(char * str, int n);
+extern void getFoodDB(void);
 
 
 

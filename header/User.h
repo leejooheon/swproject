@@ -6,14 +6,14 @@ typedef struct _user {
 	int age_weight;
 }User;
 
-void getUserDB(void);
-void InitUserFileDescriptor(void);
-int FindUserNumber(void);
-void AllocateUserMemory(int len);
-void SaveUser(void);
-void releaseUserMemory(void);
-int FIndSpecificMember(char * name);
-void ShowSpecificMember(int n);
+extern void getUserDB(void);
+extern void InitUserFileDescriptor(void);
+extern int FindUserNumber(void);
+extern void AllocateUserMemory(int len);
+extern void SaveUser(void);
+extern void releaseUserMemory(void);
+extern int FIndSpecificMember(char * name);
+extern void ShowSpecificMember(int n);
 
 extern User * user;
 extern int * user_len;
