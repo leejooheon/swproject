@@ -7,9 +7,11 @@ int main(void)
 	getUserDB(); 
 	ShowAllMember(); 
 	ShowSpecificMember(FIndSpecificMember("이주헌")); 
- 
-	getConditionDB();	
+	getConditionDB();
 
+	CheckUserExist();
+	getUserInfoReference();
+	getInputFoodInfo();
 
 	releaseUserMemory(); 
 	releaseFoodDBMemory(); 
